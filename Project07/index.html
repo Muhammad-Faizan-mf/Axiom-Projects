@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hangman Game</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Hangman</h1>
+    <p>Please use keyboard to select characters</p>
+    
+    <div class="container">
+        <svg class="hangman-container" height="250" width="200">
+
+            <line x1="60" y1="20" x2="140" y2="20" />
+            <line x1="140" y1="20" x2="140" y2="50" />
+            <line x1="60" y1="20" x2="60" y2="230" />
+            <line x1="20" y1="230" x2="100" y2="230" />
+
+            <!--Hangman head-->
+            <circle cx="140" cy="70" r="20" class="hangman-part" /> 
+            <!--hangman core-->
+            <line x1="140" y1="90" x2="140" y2="150" class="hangman-part" />  
+            <!--hangman arms-->
+            <line x1="140" y1="100" x2="120" y2="140" class="hangman-part" />         
+            <line x1="140" y1="100" x2="160" y2="140" class="hangman-part" />
+            <!--hangman legs-->
+            <line x1="140" y1="150" x2="120" y2="190" class="hangman-part" />
+            <line x1="140" y1="150" x2="160" y2="190" class="hangman-part" />
+            
+
+        </svg>
+
+        <div class="incorrect-guesses-container">
+            <div id="incorrect-letters"></div>
+        </div>
+        <div class="word" id="word"></div>
+
+
+    </div>
+    <div class="gameover-container" id="gameover-container">
+        <div class="popup">
+            <h2 id="gameover-message">Congrats! You Won!</h2>
+            <button id="play-btn">Play Again</button>
+        </div>
+    </div>
+    <div class="notification-container" id="notification-container"><p>You have already guessed this letter</p></div>
+
+
+    <script src="script.js"></script>
+</body>
+</html>
