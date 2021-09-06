@@ -4,6 +4,7 @@ Projects for practice using HTML,CSS and javascript
 Link https://thirsty-keller-28093b.netlify.app/
 
 Details about project
+
 Project 1 - Sign up Form
 Project#02 (Seat selection at movie theater)
 Project#03 (Video player)
